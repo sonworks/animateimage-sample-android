@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.testanimateimage.MainActivity"
+    android:id="@+id/root_layout_id" >
+
+    <ImageView 
+        android:id="@+id/animation_imageview_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"/>
+    <!-- 
+    <View 
+        android:id="@+id/animation_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+     -->
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button 
+            android:id="@+id/alpha_button_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Alpha"
+            android:textSize="16sp"
+            android:onClick="onButtonClick" />
+        <Button 
+            android:id="@+id/move_button_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Move"
+            android:textSize="16sp"
+            android:onClick="onButtonClick" />
+        <Button 
+            android:id="@+id/rotation_button_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Rotete"
+            android:textSize="16sp"
+            android:onClick="onButtonClick" />
+        <Button 
+            android:id="@+id/multianim_button_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sample"
+            android:textSize="16sp"
+            android:onClick="onButtonClick" />t
+    </LinearLayout>
+
+</RelativeLayout>
